@@ -4,10 +4,13 @@ html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
-    width: 80vw;
+    width: 75vw;
     margin: auto;
     background-image: url('../img/yellow.png');
     background-repeat: repeat;
+}
+body {
+    border: 1px solid black;
 }
 
 
@@ -28,6 +31,12 @@ a {
     padding: 0.2em 0;
 }
 
+
+.top{
+    display: flex;
+    justify-content: space-around;
+
+}
 .myName{
     width: 48%;
     font-size: 1.4em;
@@ -38,7 +47,8 @@ a {
 }
 .nav{
     width: 48%;
-    float: right;
+    display: flex;
+    justify-content: space-around;
 }
 
 .nav > ul {
@@ -60,6 +70,52 @@ a {
 .clearfix:after {
     clear: both;
 }
+
+
+.exp--container--top{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* budki doświadczenia ==================================================================================================== */
+.exp--html{
+    width: 180px;
+    height: 220px;
+    border: 1px solid black;
+    font-size: ;
+}
+
+.exp--react{
+    width: 180px;
+    height: 220px;
+    border: 1px solid black;
+}
+
+.exp--js{
+    width: 180px;
+    height: 220px;
+    border: 1px solid black;
+}
+.exp--css{
+    width: 180px;
+    height: 220px;
+    border: 1px solid black;
+}
+
+.ico{
+    text-align: center;
+    height: 130px;
+    font-size: 6em;
+}
+
+.exp--text{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+
+
 
 @media screen and (max-width: 600px) {
     body {
@@ -92,10 +148,19 @@ a {
         margin: auto;
     }
 
+    .exp--container--top{
+        display: inline;
+    }
+
+    .experience{
+        width: 180px;
+        margin: auto;
+    }
+
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 1075px){
+@media screen and (min-width: 601px) and (max-width: 1152px){
     .body{
         margin: 0;
         text-align: center;
@@ -124,23 +189,3 @@ a {
         padding: 0;
     }
 }
-
-/*
-@media screen and (max-width: 1200px) {
-    .top {
-        margin: auto;
-    }
-
-    .myName {
-        font-size: 2em;
-        display: inline;
-        float: none;
-    }
-
-    .nav{
-        display: inline;
-        float: none;
-    }
-
-
-} to na potem */
