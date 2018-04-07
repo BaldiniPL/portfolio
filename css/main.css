@@ -114,6 +114,16 @@ a {
     font-size: 1.1em;
 }
 
+.about-desc{
+    width: 420px;
+    margin: 0 150px 0 150px;
+    font-size: 1.3em;
+}
+
+.quote {
+    font-size: 0.9em;
+}
+
 
 
 
