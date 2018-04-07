@@ -5,8 +5,9 @@ html {
     font-size: 1em;
     line-height: 1.4;
     width: 75vw;
-    margin: auto;
     background-color: #eee;
+    display: table;
+    margin: auto;
 }
 body {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -42,6 +43,7 @@ h2 {
     justify-content: space-around;
     background-image: url('../img/dark.png');
     color: #eee;
+
 }
 
 .myName{
@@ -56,6 +58,11 @@ h2 {
     display: flex;
     justify-content: space-around;
 
+}
+
+.fixed{
+    position: fixed;
+    width: 100%;
 }
 
 .nav > ul {
@@ -202,6 +209,7 @@ h2 {
         margin: 0;
         text-align: center;
         font-size: 1em;
+        width: 100vw;
     }
 
     .top {
