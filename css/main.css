@@ -49,13 +49,13 @@ h2 {
     font-size: 1.4em;
     padding: .3em;
     margin: .3em;
-    border: 1px solid black;
     float: left;
 }
 .nav{
     width: 48%;
     display: flex;
     justify-content: space-around;
+
 }
 
 .nav > ul {
@@ -204,6 +204,11 @@ h2 {
         font-size: 1em;
     }
 
+    .top {
+        display: block;
+        width: 100%;
+    }
+
     .myName, .nav .nav > ul, .nav > ul > li {
         margin: 0;
         padding: 0;
@@ -211,12 +216,15 @@ h2 {
     }
 
     .myName{
-        font-size: 1em;
-        float: none;
+        font-size: 1.2em;
+        width: 100%;
+        text-align: center;
+        margin: 1em 0 1em 0;
+        padding: 1em 0 1em 0;
+
     }
 
     .nav{
-        float: none;
         text-align: center;
         width: 100vw;
         padding: .1em;
@@ -238,7 +246,6 @@ h2 {
     }
 
     .quote{
-        margin-top: -1em;
         font-size: 1.2em;
         text-align: center;
     }
@@ -285,14 +292,17 @@ h2 {
         font-size: 1em;
     }
 
+    .top{
+        display: inline-block;
+        width: 100%;
+    }
+
     .myName {
         width: 100%;
         text-align: center;
-        padding: .2em;
-        margin: .2em;
-        font-size: 1.2em;
-        float: none;
-        display: inline;
+        font-size: 1.4em;
+
+
     }
 
     .nav{
@@ -300,7 +310,7 @@ h2 {
         text-align: center;
         width: 100vw;
         padding: .1em;
-        font-size: .8em;
+        font-size: 1.1em;
         display: inline;
     }
 
