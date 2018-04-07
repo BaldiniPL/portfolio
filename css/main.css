@@ -6,11 +6,10 @@ html {
     line-height: 1.4;
     width: 75vw;
     margin: auto;
-    background-image: url('../img/yellow.png');
-    background-repeat: repeat;
+    background-color: #eee;
 }
 body {
-    border: 1px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 
@@ -24,6 +23,12 @@ a {
     text-decoration: none;
 }
 
+h2 {
+    font: 400 2em "Roboto", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding: 1.4em;
+}
+
 .browserupgrade {
     margin: 0.2em 0;
     background: #ccc;
@@ -35,8 +40,10 @@ a {
 .top{
     display: flex;
     justify-content: space-around;
-
+    background-image: url('../img/dark.png');
+    color: #eee;
 }
+
 .myName{
     width: 48%;
     font-size: 1.4em;
@@ -59,16 +66,38 @@ a {
 
 }
 
+.pfotter{
+    background-color: black;
+    color: #eee;
+}
+
 .nav > ul > li {
     font-size: 1.2em;
     padding: .4em;
     margin: .4em;
-    border: 1px solid black;
     float: left;
+}
+
+.nav > ul > li > a{
+    color: #eee;
 }
 
 .clearfix:after {
     clear: both;
+}
+
+.form-msg, .form-email {
+    width: 80%;
+    margin: 5px;
+}
+
+.btn-class{
+    width: 150px;
+    margin: auto;
+}
+
+.form-input{
+    width: 100%;
 }
 
 
@@ -82,25 +111,25 @@ a {
 .exp--html{
     width: 180px;
     height: 220px;
-    border: 1px solid black;
-    font-size: ;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
 }
 
 .exp--react{
     width: 180px;
     height: 220px;
-    border: 1px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .exp--js{
     width: 180px;
     height: 220px;
-    border: 1px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 .exp--css{
     width: 180px;
     height: 220px;
-    border: 1px solid black;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
 .ico{
@@ -118,11 +147,52 @@ a {
     width: 420px;
     margin: 0 150px 0 150px;
     font-size: 1.3em;
+
 }
 
 .quote {
-    font-size: 0.9em;
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 2.3em;
 }
+
+.about {
+    background-image: url('../img/dark.png');
+    background-repeat: repeat;
+    color: #eee;
+
+}
+
+.form {
+    width: 60%;
+    height: 200px;
+    margin: auto;
+}
+
+.form-back{
+    width: 50%;
+    height: 350px;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer--msg{
+    border: 1px solid black;
+}
+
+.footer--contact > p{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 1.9em;
+}
+
+
 
 
 
@@ -141,8 +211,7 @@ a {
     }
 
     .myName{
-        font-size: 2.3em;
-        display: inline;
+        font-size: 1em;
         float: none;
     }
 
@@ -151,11 +220,11 @@ a {
         text-align: center;
         width: 100vw;
         padding: .1em;
-        font-size: 1.7em;
+        font-size: 1em;
         display: inline;
     }
     .top {
-        margin: auto;
+        display: inline;
     }
 
     .exp--container--top{
@@ -167,10 +236,53 @@ a {
         margin: auto;
     }
 
+    .about-desc {
+        display: none;
+    }
+
+    .quote{
+        margin-top: -1em;
+        font-size: 1.2em;
+        text-align: center;
+    }
+
+    .footer {
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-msg{
+        width: 100%;
+        margin: auto;
+    }
+
+    .form{
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .form-email{
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .form-msg{
+        width: 80%;
+        margin: auto;
+    }
+
+    .form-back{
+        width: 100%;
+    }
+
+
 
 }
 
-@media screen and (min-width: 601px) and (max-width: 1152px){
+@media screen and (min-width: 601px) and (max-width: 1134px){
     .body{
         margin: 0;
         text-align: center;
@@ -180,22 +292,140 @@ a {
     .myName {
         width: 100%;
         text-align: center;
-        padding: 0;
-        margin: 0;
-        font-size: 1.6em;
+        padding: .2em;
+        margin: .2em;
+        font-size: 1.2em;
+        float: none;
+        display: inline;
     }
 
     .nav{
-        width: 100%;
+        float: none;
+        text-align: center;
+        width: 100vw;
+        padding: .1em;
+        font-size: .8em;
+        display: inline;
     }
+
 
     .nav > ul {
         display: flex;
         justify-content: center;
     }
 
-    .top{
-        width: 100%;
-        padding: 0;
+    .about-desc {
+        margin: 0 50px 0 50px;
+        font-size: 1em;
     }
+
+}
+
+
+
+/*formularz*/
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 94%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-image: url('../img/dark.png');
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+    text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
 }

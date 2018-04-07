@@ -10,6 +10,8 @@
         <link rel="manifest" href="site.webmanifest">
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/main.css">
+
+
         <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
     </head>
     <body>
@@ -17,15 +19,15 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
 
-       <div id="top">
+       <div id="top" class="top">
 
           <div class="myName">Kamil Balda - Junior Front-End Developer</div>
             <div class="nav">
               <ul>
-                  <li><a href="#">Home</a></li>
-                  <li><a href="#">Doświadczenie</a></li>
-                  <li><a href="#">O mnie</a></li>
-                  <li><a href="#">Kontakt</a></li>
+                  <li><a href="#top">Home</a></li>
+                  <li><a href="#experience">Doświadczenie</a></li>
+                  <li><a href="#about">O mnie</a></li>
+                  <li><a href="#footer">Kontakt</a></li>
               </ul>
           </div>
 
@@ -33,9 +35,9 @@
 
 
       </div>
-
+        <h2>Technologie które używam i uzywam w swoich pracach</h2>
       <div id="experience" class="experience">
-          <h2>Technologie które używam</h2>
+
           <div class="exp--container--top">
               <div class="exp--html">
                   <p class="exp--text">HTML5</p>
@@ -67,26 +69,44 @@
 
       </div>
 
-      <div id="about">
-          <h2>Coś o mnie</h2>
-          <div class="about-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem ducimus labore officiis perspiciatis reprehenderit sapiente, suscipit voluptas. Atque dolore, eligendi error fugit quia repellendus reprehenderit sed? Deleniti, quaerat, reprehenderit.</p>
+      <div id="about" class="about">
+          <h2 style="color: #eee;">Coś o mnie</h2>
+          <div class="about-desc"><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Commodi dolorem ducimus labore officiis perspiciatis reprehenderit sapiente, suscipit voluptas. Atque dolore, eligendi error fugit quia repellendus reprehenderit sed? Deleniti, quaerat, reprehenderit.</p></div>
           <div class="quote"><blockquote>Najwyższa jakość wykonywanej pracy to mój priorytet. Osiągam ją dzięki współpracy opartej na uczciwości, wzajemnym szacunku i zaufaniu.</blockquote></div>
-          </div>
+
 
       </div>
 
-      <div id="footer">
-         <div class="footer--msg">
-             <form method="POST" action="https://formspree.io/baldakamil@gmail.com">
-                 <input type="email" name="email" placeholder="Twój adres email">
-                 <textarea name="message" placeholder="Treść Wiadomości"></textarea>
-                 <button type="submit">Wyślij</button>
-             </form>
+        <h2>Zapraszam do kontaktu ze mną</h2>
+      <div id="footer" class="footer">
+
+         <div class="form-back">
+             <div class="container">
+                 <form id="contact" action="https://formspree.io/baldakamil@gmail.com" method="POST">
+                     <fieldset>
+                         <input placeholder="Twoje imie" name="name" type="text" tabindex="1" required autofocus>
+                     </fieldset>
+                     <fieldset>
+                         <input placeholder="Twój adres email" type="email" name="_replyto" tabindex="2" required>
+                     </fieldset>
+
+                     <fieldset>
+                         <textarea placeholder="Treść wiadomości" tabindex="5" required></textarea>
+                     </fieldset>
+                     <fieldset>
+                         <button name="submit" value="send" type="submit" id="contact-submit" data-submit="...Sending">Wyślij</button>
+                     </fieldset>
+
+                 </>
+             </div>
+
          </div>
-         <div class="footer--contact">
-             contact
          </div>
       </div>
+
+        <div class="footer--contact">
+            <p class="pfotter">© Copyright - 2018   |    All Rights Reserved   |    Kamil Balda ♔</p>
+        </div>
 
 
         <script src="js/vendor/modernizr-3.5.0.min.js"></script>
@@ -94,6 +114,9 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
         <script src="js/plugins.js"></script>
         <script src="js/main.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
 
     </body>
