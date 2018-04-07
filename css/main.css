@@ -105,6 +105,9 @@ a {
     .myName {
         width: 100%;
         text-align: center;
+        padding: 0;
+        margin: 0;
+        font-size: 1.6em;
     }
 
     .nav{
@@ -113,11 +116,12 @@ a {
 
     .nav > ul {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
     }
 
     .top{
         width: 100%;
+        padding: 0;
     }
 }
 
