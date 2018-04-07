@@ -223,9 +223,6 @@ h2 {
         font-size: 1em;
         display: inline;
     }
-    .top {
-        display: inline;
-    }
 
     .exp--container--top{
         display: inline;
@@ -247,7 +244,6 @@ h2 {
     }
 
     .footer {
-        display: inline;
         width: 100%;
         text-align: center;
     }
@@ -317,6 +313,37 @@ h2 {
     .about-desc {
         margin: 0 50px 0 50px;
         font-size: 1em;
+    }
+
+    .footer {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-msg{
+        width: 100%;
+        margin: auto;
+    }
+
+    .form{
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .form-email{
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .form-msg{
+        width: 80%;
+        margin: auto;
+    }
+
+    .form-back{
+        width: 100%;
     }
 
 }
