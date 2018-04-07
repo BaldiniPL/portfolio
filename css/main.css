@@ -1,90 +1,33 @@
-/*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
-/*
- * What follows is the result of much research on cross-browser styling.
- * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
- * Kroc Camen, and the H5BP dev community and team.
- */
-
-/* ==========================================================================
-   Base styles: opinionated defaults
-   ========================================================================== */
 
 html {
     color: #222;
     font-size: 1em;
     line-height: 1.4;
+    width: 75vw;
+    margin: auto;
+    background-color: #eee;
+}
+body {
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
 
-::-moz-selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
 
-::selection {
-    background: #b3d4fc;
-    text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-    vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-    border: 0;
-    margin: 0;
-    padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
 
 textarea {
     resize: vertical;
 }
 
-/* ==========================================================================
-   Browser Upgrade Prompt
-   ========================================================================== */
+a {
+    text-decoration: none;
+}
+
+h2 {
+    font: 400 2em "Roboto", Helvetica, Arial, sans-serif;
+    text-align: center;
+    padding: 1.4em;
+}
 
 .browserupgrade {
     margin: 0.2em 0;
@@ -93,199 +36,396 @@ textarea {
     padding: 0.2em 0;
 }
 
-/* ==========================================================================
-   Author's custom styles
-   ========================================================================== */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* ==========================================================================
-   Helper classes
-   ========================================================================== */
-
-/*
- * Hide visually and from screen readers
- */
-
-.hidden {
-    display: none !important;
+.top{
+    display: flex;
+    justify-content: space-around;
+    background-image: url('../img/dark.png');
+    color: #eee;
 }
 
-/*
- * Hide only visually, but have it available for screen readers:
- * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
- *
- * 1. For long content, line feeds are not interpreted as spaces and small width
- *    causes content to wrap 1 word per line:
- *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
- */
-
-.visuallyhidden {
-    border: 0;
-    clip: rect(0 0 0 0);
-    -webkit-clip-path: inset(50%);
-    clip-path: inset(50%);
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
-    padding: 0;
-    position: absolute;
-    width: 1px;
-    white-space: nowrap; /* 1 */
+.myName{
+    width: 48%;
+    font-size: 1.4em;
+    padding: .3em;
+    margin: .3em;
+    border: 1px solid black;
+    float: left;
+}
+.nav{
+    width: 48%;
+    display: flex;
+    justify-content: space-around;
 }
 
-/*
- * Extends the .visuallyhidden class to allow the element
- * to be focusable when navigated to via the keyboard:
- * https://www.drupal.org/node/897638
- */
-
-.visuallyhidden.focusable:active,
-.visuallyhidden.focusable:focus {
-    clip: auto;
-    -webkit-clip-path: none;
-    clip-path: none;
-    height: auto;
+.nav > ul {
+    list-style-type: none;
     margin: 0;
-    overflow: visible;
-    position: static;
-    width: auto;
-    white-space: inherit;
+    padding: 0;
+
+
 }
 
-/*
- * Hide visually and from screen readers, but maintain layout
- */
-
-.invisible {
-    visibility: hidden;
+.pfotter{
+    background-color: black;
+    color: #eee;
 }
 
-/*
- * Clearfix: contain floats
- *
- * For modern browsers
- * 1. The space content is one way to avoid an Opera bug when the
- *    `contenteditable` attribute is included anywhere else in the document.
- *    Otherwise it causes space to appear at the top and bottom of elements
- *    that receive the `clearfix` class.
- * 2. The use of `table` rather than `block` is only necessary if using
- *    `:before` to contain the top-margins of child elements.
- */
+.nav > ul > li {
+    font-size: 1.2em;
+    padding: .4em;
+    margin: .4em;
+    float: left;
+}
 
-.clearfix:before,
-.clearfix:after {
-    content: " "; /* 1 */
-    display: table; /* 2 */
+.nav > ul > li > a{
+    color: #eee;
 }
 
 .clearfix:after {
     clear: both;
 }
 
-/* ==========================================================================
-   EXAMPLE Media Queries for Responsive Design.
-   These examples override the primary ('mobile first') styles.
-   Modify as content requires.
-   ========================================================================== */
-
-@media only screen and (min-width: 35em) {
-    /* Style adjustments for viewports that meet the condition */
+.form-msg, .form-email {
+    width: 80%;
+    margin: 5px;
 }
 
-@media print,
-       (-webkit-min-device-pixel-ratio: 1.25),
-       (min-resolution: 1.25dppx),
-       (min-resolution: 120dpi) {
-    /* Style adjustments for high resolution devices */
+.btn-class{
+    width: 150px;
+    margin: auto;
 }
 
-/* ==========================================================================
-   Print styles.
-   Inlined to avoid the additional HTTP request:
-   http://www.phpied.com/delay-loading-your-print-css/
-   ========================================================================== */
+.form-input{
+    width: 100%;
+}
 
-@media print {
-    *,
-    *:before,
-    *:after {
-        background: transparent !important;
-        color: #000 !important; /* Black prints faster:
-                                   http://www.sanbeiji.com/archives/953 */
-        box-shadow: none !important;
-        text-shadow: none !important;
+
+.exp--container--top{
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* budki doświadczenia ==================================================================================================== */
+.exp--html{
+    width: 180px;
+    height: 220px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+
+}
+
+.exp--react{
+    width: 180px;
+    height: 220px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.exp--js{
+    width: 180px;
+    height: 220px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.exp--css{
+    width: 180px;
+    height: 220px;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.ico{
+    text-align: center;
+    height: 130px;
+    font-size: 6em;
+}
+
+.exp--text{
+    text-align: center;
+    font-size: 1.1em;
+}
+
+.about-desc{
+    width: 420px;
+    margin: 0 150px 0 150px;
+    font-size: 1.3em;
+
+}
+
+.quote {
+    font-size: 1.4em;
+    font-style: italic;
+    text-align: center;
+    padding-top: 0.8em;
+    padding-bottom: 2.3em;
+}
+
+.about {
+    background-image: url('../img/dark.png');
+    background-repeat: repeat;
+    color: #eee;
+
+}
+
+.form {
+    width: 60%;
+    height: 200px;
+    margin: auto;
+}
+
+.form-back{
+    width: 50%;
+    height: 350px;
+    margin: auto;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+}
+.footer--msg{
+    border: 1px solid black;
+}
+
+.footer--contact > p{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 1.9em;
+}
+
+
+
+
+
+
+@media screen and (max-width: 600px) {
+    body {
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
     }
 
-    a,
-    a:visited {
-        text-decoration: underline;
+    .myName, .nav .nav > ul, .nav > ul > li {
+        margin: 0;
+        padding: 0;
+        float: none;
     }
 
-    a[href]:after {
-        content: " (" attr(href) ")";
+    .myName{
+        font-size: 1em;
+        float: none;
     }
 
-    abbr[title]:after {
-        content: " (" attr(title) ")";
+    .nav{
+        float: none;
+        text-align: center;
+        width: 100vw;
+        padding: .1em;
+        font-size: 1em;
+        display: inline;
+    }
+    .top {
+        display: inline;
     }
 
-    /*
-     * Don't show links that are fragment identifiers,
-     * or use the `javascript:` pseudo protocol
-     */
-
-    a[href^="#"]:after,
-    a[href^="javascript:"]:after {
-        content: "";
+    .exp--container--top{
+        display: inline;
     }
 
-    pre {
-        white-space: pre-wrap !important;
-    }
-    pre,
-    blockquote {
-        border: 1px solid #999;
-        page-break-inside: avoid;
+    .experience{
+        width: 180px;
+        margin: auto;
     }
 
-    /*
-     * Printing Tables:
-     * http://css-discuss.incutio.com/wiki/Printing_Tables
-     */
-
-    thead {
-        display: table-header-group;
+    .about-desc {
+        display: none;
     }
 
-    tr,
-    img {
-        page-break-inside: avoid;
+    .quote{
+        margin-top: -1em;
+        font-size: 1.2em;
+        text-align: center;
     }
 
-    p,
-    h2,
-    h3 {
-        orphans: 3;
-        widows: 3;
+    .footer {
+        display: inline;
+        width: 100%;
+        text-align: center;
     }
 
-    h2,
-    h3 {
-        page-break-after: avoid;
+    .footer-msg{
+        width: 100%;
+        margin: auto;
     }
+
+    .form{
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .form-email{
+        width: 80%;
+        margin: auto;
+
+    }
+
+    .form-msg{
+        width: 80%;
+        margin: auto;
+    }
+
+    .form-back{
+        width: 100%;
+    }
+
+
+
+}
+
+@media screen and (min-width: 601px) and (max-width: 1134px){
+    .body{
+        margin: 0;
+        text-align: center;
+        font-size: 1em;
+    }
+
+    .myName {
+        width: 100%;
+        text-align: center;
+        padding: .2em;
+        margin: .2em;
+        font-size: 1.2em;
+        float: none;
+        display: inline;
+    }
+
+    .nav{
+        float: none;
+        text-align: center;
+        width: 100vw;
+        padding: .1em;
+        font-size: .8em;
+        display: inline;
+    }
+
+
+    .nav > ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .about-desc {
+        margin: 0 50px 0 50px;
+        font-size: 1em;
+    }
+
+}
+
+
+
+/*formularz*/
+.container {
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact textarea,
+#contact button[type="submit"] {
+    font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+    background: #F9F9F9;
+    padding: 25px;
+    margin: 0;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+fieldset {
+    border: medium none !important;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+    width: 94%;
+    border: 1px solid #ccc;
+    background: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+    -webkit-transition: border-color 0.3s ease-in-out;
+    -moz-transition: border-color 0.3s ease-in-out;
+    transition: border-color 0.3s ease-in-out;
+    border: 1px solid #aaa;
+}
+
+#contact textarea {
+    height: 100px;
+    max-width: 100%;
+    resize: none;
+}
+
+#contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    background-image: url('../img/dark.png');
+    color: #FFF;
+    margin: 0 0 5px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+    background: #43A047;
+    -webkit-transition: background 0.3s ease-in-out;
+    -moz-transition: background 0.3s ease-in-out;
+    transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.copyright {
+    text-align: center;
+}
+
+#contact input:focus,
+#contact textarea:focus {
+    outline: 0;
+    border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+    color: #888;
+}
+
+:-moz-placeholder {
+    color: #888;
+}
+
+::-moz-placeholder {
+    color: #888;
+}
+
+:-ms-input-placeholder {
+    color: #888;
 }
