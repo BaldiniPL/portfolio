@@ -13,9 +13,6 @@ body {
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-
-
-
 textarea {
     resize: vertical;
 }
@@ -37,13 +34,11 @@ h2 {
     padding: 0.2em 0;
 }
 
-
 .top{
     display: flex;
     justify-content: space-around;
     background-image: url('../img/dark.png');
     color: #eee;
-
 }
 
 .myName{
@@ -53,11 +48,11 @@ h2 {
     margin: .3em;
     float: left;
 }
+
 .nav{
     width: 48%;
     display: flex;
     justify-content: space-around;
-
 }
 
 .fixed{
@@ -69,8 +64,6 @@ h2 {
     list-style-type: none;
     margin: 0;
     padding: 0;
-
-
 }
 
 .pfotter{
